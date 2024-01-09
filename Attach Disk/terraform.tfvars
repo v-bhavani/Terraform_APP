@@ -1,3 +1,3 @@
 diskid = "$tfoutputdisk.disk_id.value"
-vmid   = "$var.vmid"
+vmid   = "$tfoutputvm.vm_id.value"
 lun    = "$var.lun"
