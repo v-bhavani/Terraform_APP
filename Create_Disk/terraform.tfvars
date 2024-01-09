@@ -1,8 +1,8 @@
-resourcegroup = "$resourcegroup"
-location = "$region"
-diskname = "$diskname"
+resourcegroup = "$var.rg"
+location = "$var.region"
+diskname = "$var.datadisk"
 st_acc_type = "Standard_LRS"
-disksize = 4
-Owner    = "$resourceowner"
-Project  = "$project"
-Duration = "$duration"
+disksize = $var.datadisksize
+Owner    = "$var.owner"
+Project  = "$var.project"
+Duration = "$var.duration"
