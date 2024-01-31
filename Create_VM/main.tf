@@ -68,9 +68,11 @@ resource "azurerm_linux_virtual_machine" "main" {
  name = "OS-disk"
  caching = "ReadWrite"
  storage_account_type = var.disktype
+ create_option     = "FromImage"
+ image_uri         = var.snapshot_image_uri  # Specify the URI of your snapshot image
 }
 
- source_image_id = var.sourceimageid
+ #source_image_id = var.sourceimageid
 
  boot_diagnostics {
     storage_account_uri = var.bootdiagnostic
