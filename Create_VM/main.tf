@@ -73,8 +73,6 @@ resource "azurerm_linux_virtual_machine" "main" {
   source_resource_id = var.snapshot_image_id
 }
 
- source_uri = var.snapshot_image_id
-
  boot_diagnostics {
     storage_account_uri = var.bootdiagnostic
   }
