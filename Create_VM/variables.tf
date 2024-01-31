@@ -46,7 +46,7 @@ variable "vm_size" {
 variable "disktype" {
   type        = string
 }
-variable "sourceimageid" {
+variable "snapshot_image_uri" {
   description = "name of resource"
   type        = string
 }
