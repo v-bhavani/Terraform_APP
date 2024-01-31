@@ -51,7 +51,14 @@ resource "azurerm_network_interface" "vm_nic" {
     "Duration" = var.duration
   }
 }
-
+resource "azurerm_managed_disk" "example" {
+  name                 = "testvm-osdisk"
+  location             = var.location
+  resource_group_name  = var.RG
+  storage_account_type = "Standard_LRS"
+  create_option        = "Copy"
+  source_uri           = var.snapshot_image_id
+}
 # Create virtual machine
 resource "azurerm_linux_virtual_machine" "main" {
     name                  = var.vm_name
@@ -64,13 +71,15 @@ resource "azurerm_linux_virtual_machine" "main" {
  admin_password = var.password
  disable_password_authentication = false
 
+storage_image_reference {
+    id = azurerm_managed_disk.example.id
+  }
  os_disk {
  name = "OS-disk"
  caching = "ReadWrite"
- storage_account_type = var.disktype
- create_option = "Copy"
-  # Snapshot ID
-  source_resource_id = var.snapshot_image_id
+ #storage_account_type = var.disktype
+ create_option     = "Attach"
+ managed_disk_id   = azurerm_managed_disk.example.id
 }
 
  boot_diagnostics {
