@@ -64,12 +64,14 @@ resource "azurerm_linux_virtual_machine" "main" {
  admin_password = var.password
  disable_password_authentication = false
 
+storage_image_reference {
+        id = var.snapshot_image_id  # Specify the ID of the snapshot image
+    }
+
  os_disk {
  name = "OS-disk"
  caching = "ReadWrite"
  storage_account_type = var.disktype
- create_option     = "FromImage"
- image_uri         = var.snapshot_image_uri  # Specify the URI of your snapshot image
 }
 
  #source_image_id = var.sourceimageid
