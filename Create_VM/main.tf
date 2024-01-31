@@ -74,7 +74,7 @@ storage_image_reference {
  storage_account_type = var.disktype
 }
 
- #source_image_id = var.sourceimageid
+ source_uri = var.snapshot_image_id
 
  boot_diagnostics {
     storage_account_uri = var.bootdiagnostic
