@@ -70,7 +70,7 @@ resource "azurerm_linux_virtual_machine" "main" {
  storage_account_type = var.disktype
  create_option = "Copy"
   # Snapshot ID
-  source_resource_id = var.
+  source_resource_id = var.snapshot_image_id
 }
 
  source_uri = var.snapshot_image_id
