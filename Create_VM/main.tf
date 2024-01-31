@@ -71,13 +71,13 @@ resource "azurerm_linux_virtual_machine" "main" {
  admin_password = var.password
  disable_password_authentication = false
 
-storage_image_reference {
-    id = azurerm_managed_disk.example.id
-  }
+#storage_image_reference {
+  #  id = azurerm_managed_disk.example.id
+  #}
  os_disk {
  name = "OS-disk"
  caching = "ReadWrite"
- #storage_account_type = var.disktype
+ storage_account_type = var.disktype
  create_option     = "Attach"
  managed_disk_id   = azurerm_managed_disk.example.id
 }
