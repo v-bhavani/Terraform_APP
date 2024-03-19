@@ -24,7 +24,7 @@ resource "azurerm_public_ip" "vm_public_ip" {
   location            = var.location
   resource_group_name = var.RG
   allocation_method   = "Dynamic"
-  sku                 = "Basic" 
+  sku                 = "Standard" 
    tags = {
     "Owner" = var.owner
     "Project" = var.project 
