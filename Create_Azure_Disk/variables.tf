@@ -16,9 +16,6 @@ variable "disksize" {
 variable "lun" {
   type        = number
 }
-variable "vmid" {
-  type        = string
-}
 variable "Owner" {
   type        = string
 }
