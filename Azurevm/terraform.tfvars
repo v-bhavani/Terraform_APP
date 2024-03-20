@@ -9,7 +9,6 @@ ip = [${var.ip}]
 snapshot = "$var.snapshot"
 vm_size = "$var.vm_size"
 disktype = "$var.disktype"
-# sourceimageid = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/cloud-demo/providers/Microsoft.Compute/galleries/tfgallery/images/tfimage/versions/0.0.1"
 bootdiagnostic = "https://${var.boot_storage}.blob.core.windows.net/"
 project = "$var.project"
 duration = "$var.duration"
