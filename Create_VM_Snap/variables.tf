@@ -50,10 +50,6 @@ variable "bootdiagnostic" {
   description = "name of resource"
   type        = string
 }
-variable "snapshot_id" {
-  description = "name of resource"
-  type        = string
-}
 variable "project" {
   description = "name of resource"
   type        = string
