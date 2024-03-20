@@ -6,4 +6,4 @@ disksize = $var.disksize
 Owner    = "$var.owner"
 Project  = "$var.project"
 Duration = "$var.duration"
-lun = 1
+lun = $var.lun
