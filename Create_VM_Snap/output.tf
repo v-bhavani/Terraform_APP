@@ -1,3 +1,3 @@
-output "virtual_machine_id" {
+output "vm_id" {
   value = azurerm_virtual_machine.myterraformvm.id
 }
