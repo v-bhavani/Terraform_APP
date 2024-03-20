@@ -1,0 +1,10 @@
+resourcegroup = "tfrg"
+location = "East Us"
+diskname = "disktf1"
+st_acc_type = "Standard_LRS"
+disksize = 32
+Owner    = "irfana"
+Project  = "terraform"
+Duration = "20/03/2024"
+vmid = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/tfrg/providers/Microsoft.Compute/virtualMachines/tfvm1"
+lun = 1
