@@ -1,6 +1,14 @@
 provider "aws" {
   region  = "us-east-1"
 }
+terraform {
+  backend "s3" {
+    bucket         = "terraform-bucket-bcs-demo"
+    key            = "tf/terraformstop.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+  }
+}
 ###This is applicable for taking snapshot of existing instance
 
 data "aws_instance" "existing_instance" {
