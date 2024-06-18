@@ -3,14 +3,14 @@ variable "instance_id" {
   type        = string
   default = ""
 }
-variable "access_key" {
-  description = "This is the access key for the aws"
-  type = string
-  default = ""
-}
+#variable "access_key" {
+#  description = "This is the access key for the aws"
+#  type = string
+#  default = ""
+#}
 
-variable "secret_key" {
-  description = "This is the access key for the aws"
-  type = string
-  default = ""
-}
+#variable "secret_key" {
+#  description = "This is the access key for the aws"
+#  type = string
+#  default = ""
+#}
