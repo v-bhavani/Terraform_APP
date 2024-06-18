@@ -1,3 +1,6 @@
+provider "aws" {
+  region  = "us-east-1"
+}
 data "aws_instance" "existing_instance" {
   instance_id = var.instance_id
 }
