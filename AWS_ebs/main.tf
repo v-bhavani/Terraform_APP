@@ -1,6 +1,14 @@
 provider "aws" {
   region  = "us-east-1"
 }
+terraform {
+  backend "s3" {
+    bucket         = "terraform-bucket-bcs-demo"
+    key            = "tf/terraformebs.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-locks"
+  }
+}
 resource "aws_ebs_volume" "example_volume" {
   for_each          = var.volumes
   availability_zone = each.value.availability_zone
