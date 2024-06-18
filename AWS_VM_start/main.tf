@@ -9,6 +9,3 @@ resource "aws_ec2_instance_state" "existing_instance" {
     command = "echo Instance started."
   }
 }
-output "instance_state" {
-  value = data.aws_instance.existing_instance.instance_state
-}
