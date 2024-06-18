@@ -1,3 +1,6 @@
+provider "aws" {
+  region  = "us-east-1"
+}
 resource "aws_ebs_volume" "example_volume" {
   for_each          = var.volumes
   availability_zone = each.value.availability_zone
