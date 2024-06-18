@@ -1,2 +1,2 @@
-resource_group_name = "cloud-demo"
-vm_name             = "symphony-new"
+resource_group_name = "$var.rg"
+vm_name             = "$var.vmname"
