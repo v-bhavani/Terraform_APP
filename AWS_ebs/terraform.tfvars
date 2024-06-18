@@ -14,4 +14,4 @@ volumes = {
 }
 
 instance_id = "$var.instanceid"  # Replace with your actual instance ID
-volume_to_attach = "volume1"  # Replace with the key of the volume you want to attach
+volume_to_attach = "volume2"  # Replace with the key of the volume you want to attach
