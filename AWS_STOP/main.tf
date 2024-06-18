@@ -5,7 +5,7 @@ provider "aws" {
 # Configure the S3 backend
 terraform {
   backend "s3" {
-    bucket         = "testanisble"          # Replace with your S3 bucket name
+    bucket         = "terraform-state-bucket-bcs"          # Replace with your S3 bucket name
     key            = "tf/statestop.tfstate"    # Path to the state file inside the bucket
     region         = "us-east-1"            # AWS region where the bucket is located
     encrypt        = true                   # Encrypt the state file
