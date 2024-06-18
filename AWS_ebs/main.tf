@@ -3,7 +3,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket         = "testansible"
+    bucket         = "terraform-state-bucket-bcs"
     key            = "tf/terraformebs.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
