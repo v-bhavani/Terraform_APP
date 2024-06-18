@@ -1,3 +1,3 @@
-instance_id = "i-xxxxxx"  # Replace with your actual instance ID
-# access_key = ""
-# secret_key = ""
+instance_id = "$var.instanceid"  # Replace with your actual instance ID
+# access_key = "$var.access_key"
+# secret_key = "$var.secret_key"
