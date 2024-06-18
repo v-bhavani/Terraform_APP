@@ -11,9 +11,7 @@ resource "aws_ec2_instance_state" "existing_instance" {
     command = "echo Instance stopped."
   }
 }
-output "instance_state" {
-  value = data.aws_instance.existing_instance.instance_state
-}
+
 
 # Create AMI snapshot from the stopped instance
 resource "aws_ami_from_instance" "instance_ami_snapshot" {
