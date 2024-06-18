@@ -19,11 +19,11 @@ data "azurerm_virtual_machine" "existing_vm" {
 
 # Resource to stop and deallocate the VM using a local-exec provisioner
 resource "null_resource" "stop_vm" {
-  provisioner "local-exec" {
-    command = <<EOT
-      az vm deallocate --resource-group ${var.resource_group_name} --name ${var.vm_name}
-    EOT
-  }
+    settings = <<SETTINGS
+    {
+      "commandToExecute": "az vm deallocate --resource-group ${var.vm_name} --name ${var.resource_group_name}"
+    }
+  SETTINGS
 
   triggers = {
     vm_id = data.azurerm_virtual_machine.existing_vm.id
