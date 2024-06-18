@@ -1,3 +1,3 @@
-aws_region   = "us-east-1"
-instance_id  = "i-0ff489f8699dbcda6"
-ami_name     = "Base-AMI-tesring-demo"
+aws_region   = "$var.region"
+instance_id  = "$var.instanceid"
+ami_name     = "$var.aminame"
