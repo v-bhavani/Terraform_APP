@@ -23,5 +23,3 @@ resource "null_resource" "start_vm" {
     command = "az vm start --resource-group ${azurerm_virtual_machine.existing_vm.resource_group_name} --name ${azurerm_virtual_machine.existing_vm.name}"
   }
 }
-
-}
