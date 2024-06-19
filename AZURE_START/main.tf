@@ -20,6 +20,12 @@ data "azurerm_virtual_machine" "existing_vm" {
 # Resource to start the VM using a local-exec provisioner
 resource "null_resource" "start_vm" {
   provisioner "local-exec" {
-    command = "az vm start --resource-group ${var.vm_name} --name ${var.resource_group_name}"
+    command = <<EOT
+      az vm start --resource-group ${var.resource_group_name} --name ${var.vm_name}
+    EOT
   }
+
+  # triggers = {
+  #   vm_id = data.azurerm_virtual_machine.existing_vm.id
+  # }
 }
