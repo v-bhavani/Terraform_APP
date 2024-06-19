@@ -24,7 +24,4 @@ resource "null_resource" "start_vm" {
   }
 }
 
-  triggers = {
-    vm_id = data.azurerm_virtual_machine.existing_vm.id
-  }
 }
