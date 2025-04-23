@@ -1,26 +1,26 @@
-project_id           = "sapspecific"
-region               = "us-central1"
-network_name         = "pay-pal"
-subnet_name          = "pay-subnet"
-service_account_email = "forsymphony@sapspecific.iam.gserviceaccount.com"
-snapshot_name        = "pay-pal-golden-snap-v3"
-tags = ["web", "production"]
+project_id           = "$projectid"
+region               = "$region"
+network_name         = "$vpc"
+subnet_name          = "$subnet"
+service_account_email = "$service_account"
+snapshot_name        = "$snapshot"
+tags = ["$tag1", "$tag2"]
 vms = [
   {
-    name         = "demovm"
-    machine_type = "e2-standard-8"
-    zone         = "us-central1-a"
-    private_ip   = "10.0.0.30"
+    name         = "$vmname"
+    machine_type = "$vmtype"
+    zone         = "$zone"
+    private_ip   = "$private_ip"
     disks = [
       {
-        name    = "demovm-disk1"
-        size_gb = 32
-        type    = "pd-standard"
+        name    = "$disk1_name"
+        size_gb = $disk1_size
+        type    = "$disk_type"
       },
       {
-        name    = "demovm-disk2"
-        size_gb = 32
-        type    = "pd-standard"
+        name    = "$disk2_name"
+        size_gb = $disk2_size
+        type    = "$disk_type"
       }
     ]
   }
