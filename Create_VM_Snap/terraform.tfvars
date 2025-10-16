@@ -8,7 +8,7 @@ location = "East US "
 ip = "10.2.0.71"
 snapuri = "${tfsnapoutput.snapshot_id.value}"
 osdisksize = "32"
-vm_size = "Standard D2as v5
+vm_size = "Standard D2as v5"
 disktype = "Standard_LRS"
 bootdiagnostic = "https://testcloud001423.blob.core.windows.net/"
 resourcegroup = "cloud-demo"
@@ -20,5 +20,6 @@ lun = 1
 project = "regression"
 duration = "one day"
 owner = "Irfana"
+
 
 
