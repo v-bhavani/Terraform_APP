@@ -1,9 +1,10 @@
-resourcegroup = "$var.rg"
-location = "$var.location"
-diskname = "$var.diskname"
+resourcegroup = "cloud-demo"
+location = "eastus"
+diskname = "regdisk1"
 st_acc_type = "Standard_LRS"
-disksize = $var.disksize
-Owner    = "$var.owner"
-Project  = "$var.project"
-Duration = "$var.duration"
-lun = $var.lun
+disksize = 32
+Owner    = "Irfana"
+Project  = "reg"
+Duration = "oneday"
+lun = 1
+
