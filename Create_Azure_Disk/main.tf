@@ -28,7 +28,8 @@ resource "azurerm_managed_disk" "example" {
 # Attach the disk to the existing virtual machine
 resource "azurerm_virtual_machine_data_disk_attachment" "source2" {
   managed_disk_id    = azurerm_managed_disk.example.id
-  virtual_machine_id = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/tfrg/providers/Microsoft.Compute/virtualMachines/tfvm1"
+  virtual_machine_id = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/tfrg/providers/Microsoft.Compute/virtualMachines/${vmname}"
   lun                = var.lun
   caching            = "ReadWrite"
 }
+
