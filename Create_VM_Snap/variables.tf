@@ -62,3 +62,21 @@ variable "owner" {
   description = "name of resource"
   type        = string
 }
+variable "resourcegroup" {
+  type        = string
+}
+variable "location" {
+  type        = string
+}
+variable "diskname" {
+  type        = string
+}
+variable "st_acc_type" {
+  type        = string
+}
+variable "disksize" {
+  type        = number
+}
+variable "lun" {
+  type        = number
+}
