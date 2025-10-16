@@ -6,7 +6,7 @@ vnetname = "asr-vm-vnet"
 RG = "cloud-demo"
 location = "East US "
 ip = "10.2.0.71"
-snapuri = "${tfsnapoutput.snapshot_id.value}"
+snapuri = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/cloud-demo/providers/Microsoft.Compute/snapshots/regsnap"
 osdisksize = "32"
 vm_size = "Standard D2as v5"
 disktype = "Standard_LRS"
@@ -19,6 +19,7 @@ lun = 1
 project = "regression"
 duration = "one day"
 owner = "Irfana"
+
 
 
 
