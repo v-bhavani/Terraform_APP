@@ -65,9 +65,6 @@ variable "owner" {
 variable "resourcegroup" {
   type        = string
 }
-variable "location" {
-  type        = string
-}
 variable "diskname" {
   type        = string
 }
@@ -80,3 +77,4 @@ variable "disksize" {
 variable "lun" {
   type        = number
 }
+
