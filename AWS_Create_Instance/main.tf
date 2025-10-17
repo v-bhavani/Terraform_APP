@@ -7,7 +7,7 @@ terraform {
     bucket         = "terraform-state-bucket-bcs"
     key            = "tf/terraformvm.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-locks"
+    use_lockfile  = true
   }
 }
 
@@ -30,4 +30,5 @@ resource "aws_instance" "example" {
     Mail = "irfana.j@basiscloudsolutions.com"
   }
 }
+
 
