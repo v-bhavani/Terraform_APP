@@ -10,15 +10,15 @@ terraform {
  }
 }
 resource "azurerm_resource_group" "rg" {
-  name     = var.resource_group
-  location = var.location
+  name     = cloud-demo
+  location = us-east-1
 }
 
 resource "azurerm_managed_disk" "disk" {
   name                 = var.disk_name
-  location             = var.location
+  location             = us-east-1
   resource_group_name  = azurerm_resource_group.rg.name
   storage_account_type = var.sku
   create_option        = "Empty"
-  disk_size_gb         = var.disk_size
+  disk_size_gb         = 32
 }
