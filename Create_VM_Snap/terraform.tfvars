@@ -14,10 +14,3 @@ bootdiagnostic = "https://testcloud001423.blob.core.windows.net/"
 project = "regression"
 duration = "one day"
 owner = "Irfana"
-
-
-
-
-
-
-
