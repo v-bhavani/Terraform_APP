@@ -1,4 +1,4 @@
-vm_names       = "regvm15102025"
+vm_names       = "regvm14012026"
 username       = "azureadmin"
 password       = "azureadmin@123"
 subnetname = "default" 
