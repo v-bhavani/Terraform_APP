@@ -12,5 +12,7 @@ vm_size = "Standard_D2as_v5"
 disktype = "Standard_LRS"
 bootdiagnostic = "https://testcloud001423.blob.core.windows.net/"
 project = "regression"
-duration = "one day"
+duration = "today"
 owner = "Irfana"
+
+#Test commit
