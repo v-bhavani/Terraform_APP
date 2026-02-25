@@ -1,0 +1,8 @@
+resource_group_name = "cloud-demo"
+vm_name             = "tfvm1"
+vm_size             = "Standard_D4as_v4"   
+nic_name            = "tfvm1"
+admin_username      = "azureadmin"
+admin_password      = "Welcome@123BCS"
+os_disk_id          = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/cloud-demo/providers/Microsoft.Compute/disks/main-os-disk1"
+os_disk_name        = "main-os-disk1"
