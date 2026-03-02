@@ -18,17 +18,6 @@ variable "nic_name" {
   type        = string
 }
 
-variable "admin_username" {
-  description = "Admin Username"
-  type        = string
-}
-
-variable "admin_password" {
-  description = "Admin Password"
-  type        = string
-  sensitive   = true
-}
-
 variable "os_disk_id" {
   description = "OS Disk ID"
   type        = string
