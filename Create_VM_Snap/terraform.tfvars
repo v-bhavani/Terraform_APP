@@ -1,4 +1,4 @@
-vm_names       = "Error"
+vm_names       = "azurevm01"
 username       = "azureadmin"
 password       = "azureadmin@123"
 subnetname = "default" 
