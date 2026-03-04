@@ -1,6 +1,0 @@
-resource_group_name = "cloud-demo"
-vm_name             = "azurevm"
-vm_size             = "Standard_D4as_v5"   
-nic_name            = "azurevm"
-os_disk_id          = "/subscriptions/bf18f464-1469-4216-834f-9c6694dbfe26/resourceGroups/cloud-demo/providers/Microsoft.Compute/disks/azurevm-os-disk"
-os_disk_name        = "azurevm-os-disk"
