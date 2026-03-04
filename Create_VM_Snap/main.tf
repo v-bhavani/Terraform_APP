@@ -12,7 +12,7 @@ terraform {
 }
 
 resource "azurerm_managed_disk" "copy" {
-  name = "main-os-disk"
+  name = "azurevm-os-disk"
   location = var.location
   resource_group_name = var.RG
   storage_account_type = var.disktype
@@ -30,7 +30,7 @@ data "azurerm_subnet" "existing_subnet" {
 
 # Create a public IP address
 resource "azurerm_public_ip" "vm_public_ip" {
-  name                = "public-ip"
+  name                = "azurevm-public-ip"
   location            = var.location
   resource_group_name = var.RG
   allocation_method   = "Dynamic"
@@ -87,5 +87,6 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     storage_uri = var.bootdiagnostic
   }
 }
+
 
 
