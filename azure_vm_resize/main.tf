@@ -40,3 +40,4 @@ resource "azurerm_virtual_machine" "vm" {
     prevent_destroy = true
   }
 }
+ 
