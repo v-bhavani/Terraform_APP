@@ -30,10 +30,10 @@ resource "azurerm_virtual_machine" "vm" {
   vm_size               = var.vm_size
 
   storage_os_disk {
-    name            = var.os_disk_name
-    managed_disk_id = var.os_disk_id
-    create_option   = "Attach"
-    caching         = "ReadWrite"
+  name          = var.os_disk_name
+  managed_disk_id = var.os_disk_id
+  create_option = "Attach"
+  caching       = "ReadWrite"
   }
 
   lifecycle {
