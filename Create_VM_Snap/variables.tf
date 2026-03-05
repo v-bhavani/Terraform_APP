@@ -1,67 +1,29 @@
-variable "vm_names" {
-  description = "List of names for the virtual machines"
+variable "resource_group_name" {
+  description = "Azure Resource Group Name"
   type        = string
 }
-variable "username" {
-  description = "List of usernames for the virtual machines"
+
+variable "vm_name" {
+  description = "Virtual Machine Name"
   type        = string
 }
-variable "password" {
-  description = "List of passwords for the virtual machines"
-  type        = string
-}
-variable "subnetname" {
-  description = "name of resource"
-  type        = string
-}
-variable "vnetname" {
-  description = "name of resource"
-  type        = string
-}
-variable "RG" {
-  description = "name of resource"
-  type        = string
-}
-variable "location" {
-  description = "name of resource"
-  type        = string
-}
-variable "ip" {
-  description = "name of resource"
-  type        = string
-}
+
 variable "vm_size" {
-  description = "name of resource"
-  type        = string
-}
-variable "osdisksize" {
-  description = "name of resource"
-  type        = string
-}
-variable "disktype" {
-  description = "name of resource"
-  type        = string
-}
-variable "snapuri" {
-  description = "name of resource"
-  type        = string
-}
-variable "bootdiagnostic" {
-  description = "name of resource"
-  type        = string
-}
-variable "project" {
-  description = "name of resource"
-  type        = string
-}
-variable "duration" {
-  description = "name of resource"
-  type        = string
-}
-variable "owner" {
-  description = "name of resource"
+  description = "Target VM Size (Scaling)"
   type        = string
 }
 
+variable "nic_name" {
+  description = "Network Interface Name"
+  type        = string
+}
 
+variable "os_disk_id" {
+  description = "OS Disk ID"
+  type        = string
+}
 
+variable "os_disk_name" {
+  description = "OS Disk Name"
+  type        = string
+}
