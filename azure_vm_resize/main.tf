@@ -8,7 +8,7 @@ terraform {
     storage_account_name = "testcloud001423"
     container_name = "terraform"
     key = "terraformvm.tfstate"
-}
+  }
 }
 
 # Get existing Resource Group
