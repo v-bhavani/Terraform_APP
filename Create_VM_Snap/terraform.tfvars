@@ -1,4 +1,4 @@
-vm_names       = "tfvm"
+vm_names       = "demovm"
 username       = "azureadmin"
 password       = "azureadmin@123"
 subnetname = "default" 
