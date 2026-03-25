@@ -1,26 +1,26 @@
-project_id           = "$projectid"
-region               = "$region"
-network_name         = "$vpc"
-subnet_name          = "$subnet"
-service_account_email = "$service_account"
-snapshot_name        = "$snapshot"
-tags = ["$tag1", "$tag2"]
+project_id           = "mymigration-322809"
+region               = "us-central1"
+network_name         = "appserver-testing"
+subnet_name          = "appserver-testing1"
+service_account_email = "gcp-terraform@mymigration-322809.iam.gserviceaccount.com"
+snapshot_name        = "ansiblegloden"
+tags = ["project", "terraform"]
 vms = [
   {
-    name         = "$vmname"
-    machine_type = "$vmtype"
-    zone         = "$zone"
-    private_ip   = "$private_ip"
+    name         = "terraformvm"
+    machine_type = "e2-standard-4"
+    zone         = "us-central1-a"
+    private_ip   = "10.10.20.20"
     disks = [
       {
-        name    = "$disk1_name"
-        size_gb = $disk1_size
-        type    = "$disk_type"
+        name    = "terraformvmdisk1"
+        size_gb = "4"
+        type    = "pd-standard"
       },
       {
-        name    = "$disk2_name"
-        size_gb = $disk2_size
-        type    = "$disk_type"
+        name    = "terraformvmdisk2"
+        size_gb = "10"
+        type    = "pd-standard"
       }
     ]
   }
