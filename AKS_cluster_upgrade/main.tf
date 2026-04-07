@@ -16,14 +16,14 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   location            = var.location
   resource_group_name = var.resource_group_name
   dns_prefix          = var.dns_prefix
-  oidc_issuer_enabled = true
-  kubernetes_version  = "1.34"
+  oidc_issuer_enabled = var.oidc_issuer_enabled
+  kubernetes_version  = var.cluster_version
 
   default_node_pool {
-    name            = "default"
-    node_count      = 2
-    vm_size         = "Standard_D2s_v4"
-    os_disk_size_gb = 30
+    name            = var.node_pool_name
+    node_count      = var.node_count
+    vm_size         = var.vm_size
+    os_disk_size_gb = var.os_disk_size_gb
   }
 
   service_principal {
