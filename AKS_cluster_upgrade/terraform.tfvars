@@ -1,0 +1,6 @@
+resource_group_name = "cloud-demo"
+cluster_name = "aks-cluster-demo"
+location = "eastus"
+dns_prefix = "aksdemo"
+appId = "$client_id"
+password = "$client_secret"
