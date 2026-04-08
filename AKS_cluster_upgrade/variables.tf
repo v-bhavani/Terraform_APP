@@ -22,10 +22,6 @@ variable "location" {
   description = "AKS Cluster Location"
   type        = string
 }
-variable "oidc_issuer_enabled" {
-  description = "Enable OIDC Issuer for AKS Cluster"
-  type        = bool
-}
 variable "cluster_version" {
   description = "AKS Cluster Kubernetes Version"
   type        = string
