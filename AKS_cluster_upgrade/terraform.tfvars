@@ -2,7 +2,6 @@ resource_group_name = "cloud-demo"
 cluster_name = "aks-cluster-demo"
 location = "eastus"
 dns_prefix = "aksdemo"
-oidc_issuer_enabled = true
 cluster_version = "1.35"
 node_pool_name = "default"
 node_count = 2
